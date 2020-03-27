@@ -1,0 +1,232 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header__container {
+    width: 25%;
+    height: 100%;
+    background-image: url(../img/bg.jpg);
+    position: fixed;
+    
+}
+.header__head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 30px;
+}
+.header__search {
+    font-size: 20px;
+    color: white;
+    text-align: left;
+}
+.header__list {
+    font-size: 25px;
+    color: white;
+    text-align: right;
+}
+.header__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+margin-top: 100px;
+padding-bottom: 100px;;
+}
+.header__title {
+    color: white;
+    font-family: 'Philosopher', sans-serif;
+font-size: 13px;
+text-align: center;
+padding: 0 20px 100px 20px;
+}
+.section {
+    color: black;
+    margin: 0;
+}
+.section {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 0px; /* Положение от верхнего края */
+    right: 0px; /* Положение от правого края */
+    width: 75%;
+    background-color: rgb(241, 241, 241);
+    
+    
+}
+.section__header {
+    border-bottom: 1px solid rgb(241, 241, 241);
+    background-color: white;
+    padding: 20px 0;
+
+}
+.section__menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    
+    
+}
+.section__menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight:bold;
+    
+}
+.section__container {
+    margin: 0 auto;
+    width: 96%;
+    background-color: white;
+    margin-bottom: 30px;
+}
+.section__main {
+    margin: 0 auto;
+    width: 84%;
+    padding-top: 50px;
+}
+.section__title {
+    font-size: 20px;
+}
+.section__title span {
+    color: gray;
+    font-style:italic;
+}
+.section__title h1 {
+    margin: 0px;
+}
+.section__info {
+    display: flex;
+}
+.info__item {
+    display: flex;
+    align-items: center;
+    color: gray;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    
+}
+.info__item:first-child {
+    margin-left: 0px;
+}
+.info__item p {
+    margin-left: 10px;
+}
+.section__item i {
+ font-size: 10px;
+ color: gray;
+ margin-left: 2px;
+ transform: translateY(-3px);
+ 
+}
+.section__h3 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: normal;
+    font-size: 16px !important;
+}
+.section__text {
+    display: flex;
+}
+.section__text p {
+    font-size: 17px;
+    margin-right: 15px ;
+    color: gray;
+}
+.section__button {
+    border-bottom: 1px solid rgb(158, 158, 158) ;
+    padding-bottom: 2px;
+    font-size: 12px;
+    margin-bottom: 50px;
+    margin-left: 80%;
+    margin-top: 20px;
+    display: inline-block;
+}
+.section__button a {
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    
+}
+@media only screen and (max-width: 1050px) {
+    .section__menu {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .section__button {
+        font-size: 11px;
+    }
+} 
+@media only screen and (max-width: 900px) {
+    .header__head {
+        display: none;
+    }
+    .header__footer {
+        display: none;
+    }
+    .header__container {
+        position: static;
+        width: 100%;
+    
+    }
+    .header__img {
+        margin-top: 0px;
+        padding: 0px;
+    }
+    .section {
+        position: static;
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    .section__button {
+        font-size: 10px;
+    }
+    .section__menu {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    
+     }
+
+     @media only screen and (max-width: 500px) {
+
+     .section__img {
+         display: none;
+     }
+     
+     .section {
+         font-size: 8px;
+         
+     }
+     .section__header {
+         padding: 0px;
+     }
+     .section__menu {
+         width: 100%;
+     }
+     .section__item i {
+         font-size: 8px;
+     }
+     .section__title {
+        font-size: 12px;
+    }
+    .section__text img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+    .section__text p {
+        font-size: 12px;
+    }
+    .section__button {
+        font-size: 10px;
+        margin-left: 60%;
+    }
+
+
+
+     }
+
+
+       
